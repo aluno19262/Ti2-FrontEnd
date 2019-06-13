@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Todos from './components/Todos';
 import ListaAgentes from './components/ListaAgentes';
+import Home from './components/Home';
 import { BrowserRouter as Router,Route, Link } from "react-router-dom";
 
 
@@ -10,17 +10,9 @@ import './App.css';
 
 
 
-function Index() {
-  return <h2>Home</h2>;
-}
 
-function About() {
-  return <h2>About</h2>;
-}
 
-function Users() {
-  return <h2>Users</h2>;
-}
+
 
 class App extends Component {
 
@@ -29,26 +21,32 @@ class App extends Component {
     return (
       <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
+        <nav style={NavStyle}>
+          
+            <div>
               <Link to="/">Home</Link>
-            </li>
-            <li>
+            </div>
+            <div>
               <Link to="/ListaAgentes/">About</Link>
-            </li>
-            <li>
+            </div>
+            <div>
               <Link to="/users/">Users</Link>
-            </li>
-          </ul>
+            </div>
+          
         </nav>
 
-        <Route path="/" exact component={Index} />
+        <Route path="/" exact component={Home} />
         <Route path="/ListaAgentes/" component={ListaAgentes} />
+        {/* <Route path="/Home/" component={Home} /> */}
       </div>
     </Router>
     );
   }
+}
+const NavStyle={
+  display: "flex",
+  justifyContent: "space-evenly",
+  paddingTop: "20px"
 }
 
 export default App;

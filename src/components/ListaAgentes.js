@@ -13,25 +13,28 @@ class App extends Component {
     todos: [
       {
         id: 1,
-        src: "./imagensAgentes/imagens/AndreSilveira.jpg",
+        src: "../imagensAgentes/imagens/AndreSilveira.jpg",
         nome: "André Silveira",
         descricao: "Este é o "
       },
       {
         id: 2,
-        src: "./imagensAgentes/imagens/AntonioRocha.jpg",
+        src: "../imagensAgentes/imagens/AntonioRocha.jpg",
         nome: "António Rocha",
         descricao: "Este é o "
       },
       {
         id: 3,
-        src: "./imagensAgentes/imagens/JoseAlves.jpg",
+        src: "../imagensAgentes/imagens/JoseAlves.jpg",
         nome: "José Alves",
         descricao: "Este é o "
       }
     ]
   }
-
+  handleClick = (e) => {
+    e.preventDefault();
+    console.log('The link was clicked.');
+  };
 
 
 
@@ -39,9 +42,14 @@ class App extends Component {
     return (
       <div className="App">
         <Header  key={this.state.todos.id} todos={this.state.todos} />
-        <div style={divStyle}>
-          <Todos key={this.state.todos.id} todos={this.state.todos} />
-        </div>
+        
+          <div style={divStyle}>
+            <a href="/ListaAgentes/" onClick={this.handleClick}>
+              <Todos key={this.state.todos.id} todos={this.state.todos} />
+            </a>
+          </div>
+
+          
 
 
       </div>
