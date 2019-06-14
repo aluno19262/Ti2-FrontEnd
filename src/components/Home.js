@@ -35,6 +35,7 @@ class Home extends Component {
   render() {
     return (
       <div className="App">
+        <header style={headerStyle}>HOME</header>
           <div style={divStyle}>
               <HomeListaImagens key={this.state.lista.id} lista={this.state.lista}/>
           </div>
@@ -50,6 +51,11 @@ const divStyle={
     display: "flex",
     justifyContent: "space-evenly",
     padding: "50px"
+   }
+   const headerStyle={
+     textAlign:"center",
+     fontSize:"50px",
+     padding:"40px"
    }
   
 

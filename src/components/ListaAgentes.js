@@ -40,14 +40,16 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" >
         <Header  key={this.state.todos.id} todos={this.state.todos} />
         
           <div style={divStyle}>
-            <a href="/ListaAgentes/" onClick={this.handleClick}>
+            
               <Todos key={this.state.todos.id} todos={this.state.todos} />
-            </a>
+            
           </div>
+        
+          
 
           
 
@@ -59,8 +61,9 @@ class App extends Component {
  const divStyle={
   display: "flex",
   justifyContent: "space-evenly",
-  padding: "50px"
+  padding: "50px",
  }
+
 
 
 
