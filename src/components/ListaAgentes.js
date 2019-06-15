@@ -1,72 +1,40 @@
 import React, { Component } from 'react';
-import Todos from './Todos';
-import Header from './Header';
 
 
 
-
-
-
-class App extends Component {
-
-  state = {
-    todos: [
-      {
-        id: 1,
-        src: "../imagensAgentes/imagens/AndreSilveira.jpg",
-        nome: "André Silveira",
-        descricao: "Este é o "
-      },
-      {
-        id: 2,
-        src: "../imagensAgentes/imagens/AntonioRocha.jpg",
-        nome: "António Rocha",
-        descricao: "Este é o "
-      },
-      {
-        id: 3,
-        src: "../imagensAgentes/imagens/JoseAlves.jpg",
-        nome: "José Alves",
-        descricao: "Este é o "
-      }
-    ]
-  }
-  handleClick = (e) => {
-    e.preventDefault();
-    console.log('The link was clicked.');
-  };
-
-
-
+class ListaAgentes extends Component {
+    
   render() {
-    return (
-      <div className="App" >
-        <Header  key={this.state.todos.id} todos={this.state.todos} />
-        
-          <div style={divStyle}>
-            
-              <Todos key={this.state.todos.id} todos={this.state.todos} />
-            
-          </div>
-        
-          
-
-          
-
-
-      </div>
-    );
+    return this.props.agente.map((agente) => (
+      <a href="/" >
+        <div style={DivStyle}>
+        <p style={pStyle}> {agente.nome} </p>
+        <img style={imgStyle} key={agente.id} src={agente.src} alt="P"></img>
+        <p style={pStyle}> {agente.descricao}{agente.nome} </p>
+        </div>
+      </a>
+    ));
   }
 }
- const divStyle={
-  display: "flex",
-  justifyContent: "space-evenly",
-  padding: "50px",
- }
 
 
 
+const DivStyle = {
+    display: "flex",
+    background: '#909090',
+    flexDirection: "column",
+    width:"fit-content",
+    height:"fit-content",
+  }
 
+  const imgStyle = {
+    width:"150px",
+    height:"150px",
+    margin:"10px"
+    
+  }
 
-
-export default App;
+  const pStyle = {
+textAlign:"center"
+  }
+export default ListaAgentes;

@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
-import ListaAgentes from './components/ListaAgentes';
+import Agentes from './components/Agentes';
+import Multas from './components/Multas';
+import Viaturas from './components/Viaturas';
 import Home from './components/Home';
 import { BrowserRouter as Router,Route, Link } from "react-router-dom";
 
-
-
-
 import './App.css';
-
-
-
-
-
 
 
 class App extends Component {
@@ -21,23 +15,25 @@ class App extends Component {
     return (
       <Router>
       <div>
-        <nav style={NavStyle}>
-          
+        <nav style={NavStyle}>         
             <div>
               <Link to="/">Home</Link>
             </div>
             <div>
-              <Link to="/ListaAgentes/">About</Link>
+              <Link to="/Agentes/">Agentes</Link>
             </div>
             <div>
-              <Link to="/users/">Users</Link>
-            </div>
-          
+              <Link to="/Multas/">Multas</Link>
+            </div>     
+            <div>
+              <Link to="/Viaturas/">Viaturas</Link>
+            </div>    
         </nav>
 
         <Route path="/" exact component={Home} />
-        <Route path="/ListaAgentes/" component={ListaAgentes} />
-        {/* <Route path="/Home/" component={Home} /> */}
+        <Route path="/Agentes/" component={Agentes} />
+        <Route path="/Multas/" component={Multas} />
+        <Route path="/Viaturas/" component={Viaturas} />
       </div>
     </Router>
     );

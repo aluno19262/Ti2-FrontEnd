@@ -3,19 +3,24 @@ import React, { Component } from 'react';
 
 
 class HomeListaImagens extends Component {
-
+  constructor(props) {
+    super(props);
+    this.state = { props };
+  }
   render() {
     return this.props.lista.map((lista) => (
-      <a href="/" >
-        <div style={DivStyle}>
-          <p style={pStyle}> {lista.nome} </p>
+      
+      <a  key={"a"+lista.id} href={"/"+lista.nome+"/"}>
+        <div  key={"div"+lista.id} style={DivStyle}>
+          <p key={"p1"+lista.id} style={pStyle}> {lista.nome} </p>
           <img style={imgStyle} key={lista.id} src={lista.src} alt="P"></img>
-          <p style={pStyle}> {lista.nome} </p>
+          <p  key={"p2"+lista.id}style={pStyle}> {lista.nome} </p>
         </div>
       </a>
     ));
   }
 }
+
 
 
 
