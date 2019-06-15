@@ -25,6 +25,11 @@ class Home extends Component {
         id: 3,
         src: "./imagensAgentes/imagens/AndreSilveira.jpg",
         nome: "Agentes",
+      },
+      {
+        id: 4,
+        src: "./imagensAgentes/imagens/AndreSilveira.jpg",
+        nome: "Esquadras",
       }
     ]
   }

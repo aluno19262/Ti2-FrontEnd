@@ -1,27 +1,15 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router,Route, Link } from "react-router-dom";
-import DetalhesAgentes from './DetalhesAgentes';
 
 
-
-class ListaAgentes extends Component {
+class DetalhesAgentes extends Component {
 
   render() {
     return this.props.agente.map((agente) => (
-      <Router>
-        <Link to={"/Agentes/" + agente.id}>
-          <div style={DivStyle}>
-          
-            <button>
+        <div style={DivStyle}>
               <p style={pStyle}> {agente.nome} </p>
               <img style={imgStyle} key={agente.id} src={agente.src} alt="P"></img>
               <p style={pStyle}> {agente.descricao}{agente.nome} </p>
-            </button>
-        
-          </div>
-          </Link>
-          <Route path={"/Agentes/" + agente.id} component={DetalhesAgentes} />
-      </Router>
+        </div>    
     ));
   }
 }
@@ -46,4 +34,4 @@ const imgStyle = {
 const pStyle = {
   textAlign: "center"
 }
-export default ListaAgentes;
+export default DetalhesAgentes;

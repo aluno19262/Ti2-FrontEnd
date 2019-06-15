@@ -12,19 +12,53 @@ class Viaturas extends Component {
         viatura: [
           {
             id: 1,
-            descricao:"blablabla",
-            nome: "Excesso de bla",
+            combustivel:"Diesel",
+            src:"../imagensAgentes/imagens/RuiVieira.jpg",
+            marca: "Audi",
+            modelo:"A4",
+            ano:"2001"
           },
           {
             id: 2,
-            descricao:"blebleble",
-            nome: "Excesso de ble",
+            combustivel:"Diesel",
+            src:"../imagensAgentes/imagens/RuiVieira.jpg",
+            marca: "Renault",
+            modelo:"Clio",
+            ano:"2001"
           },
           {
             id: 3,
-            descricao:"bliblibli",
-            nome: "Excesso de bli",
-          }
+            combustivel:"Diesel",
+            src:"../imagensAgentes/imagens/RuiVieira.jpg",
+            marca: "Toyota",
+            modelo:"Corolla",
+            ano:"2001"
+          },
+          {
+            id: 4,
+            combustivel:"Diesel",
+            src:"../imagensAgentes/imagens/RuiVieira.jpg",
+            marca: "Audi",
+            modelo:"A4",
+            ano:"2001"
+          },
+          {
+            id: 5,
+            combustivel:"Diesel",
+            src:"../imagensAgentes/imagens/RuiVieira.jpg",
+            marca: "Renault",
+            modelo:"Clio",
+            ano:"2001"
+          },
+          {
+            id: 6,
+            combustivel:"Diesel",
+            src:"../imagensAgentes/imagens/RuiVieira.jpg",
+            marca: "Toyota",
+            modelo:"Corolla",
+            ano:"2001"
+          },
+          
         ]
       }
 
@@ -48,8 +82,10 @@ class Viaturas extends Component {
 
 const divStyle={
     display: "flex",
-    justifyContent: "space-evenly",
-    padding: "50px"
+    justifyContent: "space-between",
+    padding: "50px",
+    flexWrap: "wrap",
+    padding:"50px"
    }
    const headerStyle={
      textAlign:"center",

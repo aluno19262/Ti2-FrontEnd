@@ -12,14 +12,18 @@ class ListaViaturas extends Component {
   render() {
     return this.props.viatura.map((viatura) => (
 
-
-      <div>
+      <div style={divStyle}>
+        <button style={btnStyle}>
         <li style={liStyle}>
-          <p>Numero de Viaturas: {viatura.id}</p>
-          <p>Motivo: {viatura.nome}</p>
-          <p>Descrição: {viatura.descricao}</p>
+          <img src={viatura.src} alt=""></img>
+          <p>Marca: {viatura.marca}</p>
+          <p>Modelo: {viatura.modelo}</p>
+          <p>Ano: {viatura.ano}</p>
+          <p>Combustivel: {viatura.combustivel}</p>
         </li>
-      </div >
+      </button>
+      </div>
+      
         
       
     ));
@@ -33,8 +37,15 @@ const liStyle = {
   position: "relative",
   listStyleType: "none"
 }
-
-
+const btnStyle={
+  border: "none",
+  borderRadius: "8px",
+  backgroundColor: "#e3e7ed",
+  padding:"10px"
+}
+const divStyle={
+  padding:"20px"
+}
 
 
 export default ListaViaturas;
