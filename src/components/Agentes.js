@@ -8,63 +8,48 @@ import Header from './Header';
 
 
 
-class App extends Component {
-
+class Agentes extends Component {
   state = {
-    agente: [
-      {
-        id: 1,
-        src: "../imagensAgentes/imagens/AndreSilveira.jpg",
-        nome: "André Silveira",
-        descricao: "Este é o "
-      },
-      {
-        id: 2,
-        src: "../imagensAgentes/imagens/AntonioRocha.jpg",
-        nome: "António Rocha",
-        descricao: "Este é o "
-      },
-      {
-        id: 3,
-        src: "../imagensAgentes/imagens/JoseAlves.jpg",
-        nome: "José Alves",
-        descricao: "Este é o "
-      }
-    ]
+    isLoaded:false,
+    agente: null
+    
   }
- 
-
-
+  
+  componentDidMount() {
+    fetch('http://localhost:5000/api/values/Agentes')
+    .then(res => res.json())
+    .then((data) => {
+      this.setState({ 
+        isLoaded:true,
+        agente: data
+       })
+      console.log(this.state.agente)
+    })
+    
+    .catch(console.log)
+  }
 
   render() {
-    return (
+    if(!this.state.isLoaded){
+      return <div>Loading...</div>
+    }else{
+      return (
       <div className="App" >
-        <Header  key={this.state.agente.id} agente={this.state.agente} />
-        
-          <div style={divStyle}>
-            
-              <ListaAgentes key={this.state.agente.id} agente={this.state.agente} />
-            
+        <Header  key={this.state.agente.id} agente={this.state.agente} />       
+          <div style={divStyle}>            
+              <ListaAgentes key={this.state.agente.id} agente={this.state.agente} />            
           </div>
-        
-          
-
-          
-
-
       </div>
     );
   }
+    }
+    
 }
  const divStyle={
   display: "flex",
   justifyContent: "space-evenly",
   padding: "50px",
+  flexWrap:"wrap"
  }
 
-
-
-
-
-
-export default App;
+export default Agentes;

@@ -10,6 +10,7 @@ import './App.css';
 
 
 class App extends Component {
+  
 
  
   render() {
@@ -20,6 +21,8 @@ class App extends Component {
             <div>
               <Link to="/"><button style={linkStyle}>Home</button></Link>
             </div>
+            
+            
         </nav>
 
         <Route path="/" exact component={Home} />
@@ -32,6 +35,7 @@ class App extends Component {
     );
   }
 }
+
 const linkStyle={
   width: "200px",
 height: "50px",

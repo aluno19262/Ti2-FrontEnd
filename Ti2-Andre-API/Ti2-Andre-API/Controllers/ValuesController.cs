@@ -15,6 +15,29 @@ namespace Ti2_Andre_API.Controllers
         // GET api/values
         [HttpGet("Agentes")]
         [Produces("application/json")]
+        public ActionResult GetEsquadra()
+        {
+            List<Agentes> esquadra = new List<Agentes>{
+            new Agentes {ID=1, Nome="T�nia Vieira", Esquadra="Our�m", Fotografia="TaniaVieira.jpg" },
+            new Agentes {ID=2, Nome="Ant�nio Rocha", Esquadra="Our�m", Fotografia="AntonioRocha.jpg" },
+            new Agentes {ID=3, Nome="Andr� Silveira", Esquadra="Abrantes", Fotografia="AndreSilveira.jpg" },
+            new Agentes {ID=4, Nome="Lurdes Vieira", Esquadra="Leiria", Fotografia="LurdesVieira.jpg" },
+            new Agentes {ID=5, Nome="Cl�udia Pinto", Esquadra="Porto", Fotografia="ClaudiaPinto.jpg" },
+            new Agentes {ID=6, Nome="Rui Vieira", Esquadra="Tomar", Fotografia="RuiVieira.jpg" },
+            new Agentes {ID=7, Nome="Paulo Vieira", Esquadra="Torres Novas", Fotografia="PauloVieira.jpg" },
+            new Agentes {ID=8, Nome="Augusto Carvalho", Esquadra="Lisboa", Fotografia="AugustoCarvalho.jpg" },
+            new Agentes {ID=9, Nome="Beatriz Pinto", Esquadra="Porto", Fotografia="BeatrizPinto.jpg" },
+            new Agentes {ID=10, Nome="Jos� Alves", Esquadra="Alcanena", Fotografia="JoseAlves.jpg" }
+         };
+
+
+
+            return Ok(esquadra);
+        }
+
+        // GET api/values
+        [HttpGet("Agentes")]
+        [Produces("application/json")]
         public ActionResult GetAgentes()
         {
             List<Agentes> agentes = new List<Agentes>{

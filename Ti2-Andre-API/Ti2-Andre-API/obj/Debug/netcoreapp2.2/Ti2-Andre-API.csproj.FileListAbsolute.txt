@@ -12,3 +12,17 @@ C:\Users\João Alves\source\repos\Ti2-Andre-API\Ti2-Andre-API\obj\Debug\netcorea
 C:\Users\João Alves\source\repos\Ti2-Andre-API\Ti2-Andre-API\bin\Debug\netcoreapp2.2\Ti2-Andre-API.pdb
 C:\Users\João Alves\source\repos\Ti2-Andre-API\Ti2-Andre-API\obj\Debug\netcoreapp2.2\Ti2-Andre-API.dll
 C:\Users\João Alves\source\repos\Ti2-Andre-API\Ti2-Andre-API\obj\Debug\netcoreapp2.2\Ti2-Andre-API.pdb
+C:\Users\João Alves\Documents\GitHub\Ti2-FrontEnd\Ti2-Andre-API\Ti2-Andre-API\bin\Debug\netcoreapp2.2\Ti2-Andre-API.deps.json
+C:\Users\João Alves\Documents\GitHub\Ti2-FrontEnd\Ti2-Andre-API\Ti2-Andre-API\bin\Debug\netcoreapp2.2\Ti2-Andre-API.runtimeconfig.json
+C:\Users\João Alves\Documents\GitHub\Ti2-FrontEnd\Ti2-Andre-API\Ti2-Andre-API\bin\Debug\netcoreapp2.2\Ti2-Andre-API.runtimeconfig.dev.json
+C:\Users\João Alves\Documents\GitHub\Ti2-FrontEnd\Ti2-Andre-API\Ti2-Andre-API\bin\Debug\netcoreapp2.2\Ti2-Andre-API.dll
+C:\Users\João Alves\Documents\GitHub\Ti2-FrontEnd\Ti2-Andre-API\Ti2-Andre-API\bin\Debug\netcoreapp2.2\Ti2-Andre-API.pdb
+C:\Users\João Alves\Documents\GitHub\Ti2-FrontEnd\Ti2-Andre-API\Ti2-Andre-API\obj\Debug\netcoreapp2.2\Ti2-Andre-API.csprojAssemblyReference.cache
+C:\Users\João Alves\Documents\GitHub\Ti2-FrontEnd\Ti2-Andre-API\Ti2-Andre-API\obj\Debug\netcoreapp2.2\Ti2-Andre-API.csproj.CoreCompileInputs.cache
+C:\Users\João Alves\Documents\GitHub\Ti2-FrontEnd\Ti2-Andre-API\Ti2-Andre-API\obj\Debug\netcoreapp2.2\Ti2-Andre-API.RazorAssemblyInfo.cache
+C:\Users\João Alves\Documents\GitHub\Ti2-FrontEnd\Ti2-Andre-API\Ti2-Andre-API\obj\Debug\netcoreapp2.2\Ti2-Andre-API.RazorAssemblyInfo.cs
+C:\Users\João Alves\Documents\GitHub\Ti2-FrontEnd\Ti2-Andre-API\Ti2-Andre-API\obj\Debug\netcoreapp2.2\Ti2-Andre-API.AssemblyInfoInputs.cache
+C:\Users\João Alves\Documents\GitHub\Ti2-FrontEnd\Ti2-Andre-API\Ti2-Andre-API\obj\Debug\netcoreapp2.2\Ti2-Andre-API.AssemblyInfo.cs
+C:\Users\João Alves\Documents\GitHub\Ti2-FrontEnd\Ti2-Andre-API\Ti2-Andre-API\obj\Debug\netcoreapp2.2\Ti2-Andre-API.RazorTargetAssemblyInfo.cache
+C:\Users\João Alves\Documents\GitHub\Ti2-FrontEnd\Ti2-Andre-API\Ti2-Andre-API\obj\Debug\netcoreapp2.2\Ti2-Andre-API.dll
+C:\Users\João Alves\Documents\GitHub\Ti2-FrontEnd\Ti2-Andre-API\Ti2-Andre-API\obj\Debug\netcoreapp2.2\Ti2-Andre-API.pdb

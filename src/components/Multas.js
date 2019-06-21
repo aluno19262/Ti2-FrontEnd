@@ -8,31 +8,35 @@ import ListaMultas from './ListaMultas.js';
 
 
 class Multas extends Component {
-    state = {
-        multa: [
-          {
-            id: 1,
-            descricao:"blablabla",
-            nome: "Excesso de bla",
-          },
-          {
-            id: 2,
-            descricao:"blebleble",
-            nome: "Excesso de ble",
-          },
-          {
-            id: 3,
-            descricao:"bliblibli",
-            nome: "Excesso de bli",
-          }
-        ]
-      }
+  state = {
+    isLoaded:false,
+    multa: null
+    
+  }
+  
+
+  componentDidMount() {
+    fetch('http://localhost:5000/api/values/Multas')
+    .then(res => res.json())
+    .then((data) => {
+      this.setState({ 
+        isLoaded:true,
+        multa: data
+       })
+      console.log(this.state.multa)
+    })
+    
+    .catch(console.log)
+  }
 
 
 
 
   render() {
-    return (
+    if(!this.state.isLoaded){
+      return <div>Loading...</div>
+    }else{
+      return (
       <div className="App">
         <header style={headerStyle}>Lista de Multas</header>
           <div style={divStyle}>
@@ -44,12 +48,15 @@ class Multas extends Component {
       </div>
     );
   }
+    }
+    
 }
 
 const divStyle={
     display: "flex",
     justifyContent: "space-evenly",
-    padding: "50px"
+    padding: "50px",
+    flexWrap: "wrap"
    }
    const headerStyle={
      textAlign:"center",
